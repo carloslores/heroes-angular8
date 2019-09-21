@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { RouterLink } from '@angular/router';
 
 @Injectable()
 export class HeroesService{
@@ -56,12 +57,22 @@ export class HeroesService{
     constructor(){
         console.log("Servicio listo para usarse")
     }
-    getHeroes():Heroe[]{
+    getHeroes() :Heroe[] { 
         return this.heroes
     }
-    getHeroe(idx: string){
+    getHeroe(idx: string) {
         return this.heroes[idx];
     }
+   
+    buscarHeroes( termino:string ) {
+      return this.heroes.filter(heroe => heroe.nombre.toLowerCase().replace(/-/g, "") === termino.toLowerCase().replace(/-/g, ""))
+      
+      // let heroesArr:Heroe[] = [];
+        // termino = termino.toLowerCase();
+  
+        
+    }
+   
 }
 
 export interface Heroe{

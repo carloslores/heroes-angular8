@@ -15,6 +15,7 @@ import { HeroesComponent } from './components/shared/heroes/heroes.component';
 import { AboutComponent } from './components/shared/about/about.component';
 import { from } from 'rxjs';
 import { HeroeComponent } from './components/shared/heroe/heroe.component';
+import { ResultadosHeroesComponent } from './components/shared/resultados-heroes/resultados-heroes.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { HeroeComponent } from './components/shared/heroe/heroe.component';
     HeroesComponent,
     AboutComponent,
     HeroeComponent,
+    ResultadosHeroesComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./heroes.component.sass']
 })
 export class HeroesComponent implements OnInit{
-  heroes:Heroe[] = []
+  heroes:Heroe[] = [];
   constructor(private _heroesService: HeroesService,
               private router:Router
             ){
