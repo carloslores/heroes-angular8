@@ -9,13 +9,14 @@ import { HeroesService } from './servicios/heroes.service';
 
 //Componenentes
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { HomeComponent } from './components/shared/home/home.component';
-import { HeroesComponent } from './components/shared/heroes/heroes.component';
-import { AboutComponent } from './components/shared/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { AboutComponent } from './components/about/about.component';
 import { from } from 'rxjs';
-import { HeroeComponent } from './components/shared/heroe/heroe.component';
-import { ResultadosHeroesComponent } from './components/shared/resultados-heroes/resultados-heroes.component';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { ResultadosHeroesComponent } from './components/resultados-heroes/resultados-heroes.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ResultadosHeroesComponent } from './components/shared/resultados-heroes
     AboutComponent,
     HeroeComponent,
     ResultadosHeroesComponent,
+    HeroeTarjetaComponent,
   ],
   imports: [
     BrowserModule,

@@ -65,12 +65,18 @@ export class HeroesService{
     }
    
     buscarHeroes( termino:string ) {
-      return this.heroes.filter(heroe => heroe.nombre.toLowerCase().replace(/-/g, "") === termino.toLowerCase().replace(/-/g, ""))
-      
-      // let heroesArr:Heroe[] = [];
-        // termino = termino.toLowerCase();
-  
-        
+      let heroesArr:Heroe[] = [];
+      termino = termino.toLowerCase().replace(/-/g, "");
+
+      for(let i = 0; i < this.heroes.length; i++){
+        let heroe = this.heroes[i]     
+        let nombre = heroe.nombre.toLowerCase().replace(/-/g, "")
+        if(nombre.indexOf( termino ) >= 0 ){
+          heroe.idx = i;
+          heroesArr.push( heroe )
+        }
+      }
+      return heroesArr;
     }
    
 }
@@ -81,4 +87,5 @@ export interface Heroe{
     img: string;
     aparicion: string;
     casa: string;
+    idx?: number;
 }

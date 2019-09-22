@@ -1,10 +1,10 @@
 
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/shared/home/home.component'
-import { AboutComponent } from './components/shared/about/about.component'
-import { HeroesComponent } from './components/shared/heroes/heroes.component';
-import { HeroeComponent } from './components/shared/heroe/heroe.component'
-import { ResultadosHeroesComponent  } from './components/shared/resultados-heroes/resultados-heroes.component'
+import { HomeComponent } from './components/home/home.component'
+import { AboutComponent } from './components/about/about.component'
+import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroeComponent } from './components/heroe/heroe.component'
+import { ResultadosHeroesComponent  } from './components/resultados-heroes/resultados-heroes.component'
 import { from } from 'rxjs';
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
